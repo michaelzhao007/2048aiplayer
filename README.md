@@ -1,11 +1,11 @@
-# 2048 AI
+# 2048 AI Player
 
+Refer to game code from:
 AI for the game [2048](https://github.com/gabrielecirulli/2048).
 
-See it in action [here](http://ov3y.github.io/2048-AI/). (Hit the auto-run button to let the AI attempt to solve it by itself)
+I implemented the AI portion of the game code.
+See it in action [here](https://michaelzhao007.github.io/2048aiplayer/). (Hit the auto-run button to let the AI attempt to solve it by itself)
 
-The algorithm is iterative deepening depth first alpha-beta search. The evaluation function tries to keep the rows and columns monotonic (either all decreasing or increasing) while aligning same-valued tiles and minimizing the number of tiles on the grid. For more detail on how it works, [check out my answer on stackoverflow](http://stackoverflow.com/a/22389702/1056032).
+The algorithm is using minimax algorithm with alpha-beta search. 
 
-You can tweak the thinking time via global var `animationDelay`. Higher = more time/deeper search.
 
-It achieves success rate of about 90% in my testing.
